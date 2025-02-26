@@ -21,7 +21,7 @@ function App() {
     },
   });
   return (
-    <Grid templateColumns="repeat(2, 1fr)" gap={4}>
+    <Grid p={10} templateColumns="repeat(2, 1fr)" gap={4}>
       <Counter count={count} setCount={setCount} />
       <TextEditor />
       <GridItem colSpan={2}>
