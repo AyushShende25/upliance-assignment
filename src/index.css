@@ -1,0 +1,33 @@
+.editor-box{
+  height: 90%;
+  position: relative;
+}
+
+.editor-textbox{
+  height: 100%;
+  padding: 10px 15px;
+}
+
+.editor-placeholder{
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  color: #999;
+}
+
+/* THEME CLASSES */
+.editor-textBold{
+  font-weight: bold;
+}
+
+.editor-textItalic{
+  font-style: italic;
+}
+
+.editor-textUnderline{
+  text-decoration: underline;
+}
+
+.editor-textStrikethrough{
+  text-decoration: line-through;
+}

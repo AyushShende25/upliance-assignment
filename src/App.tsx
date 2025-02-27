@@ -3,8 +3,9 @@ import { animated, useSpring, easings } from '@react-spring/web';
 import { useState } from 'react';
 
 import Counter from '@/components/counter';
-import TextEditor from '@/components/textEditor';
+// import TextEditor from '@/components/textEditor';
 import UserForm from '@/components/userForm';
+import EditorForm from './components/editorForm';
 
 const AnimatedBox = animated(Box);
 
@@ -21,16 +22,26 @@ function App() {
     },
   });
   return (
-    <Grid p={10} templateColumns="repeat(2, 1fr)" gap={4}>
-      <Counter count={count} setCount={setCount} />
-      <TextEditor />
-      <GridItem colSpan={2}>
+    <Grid
+      height="100vh"
+      templateRows="repeat(3, 1fr)"
+      p={10}
+      templateColumns="repeat(2, 1fr)"
+      gap={4}
+    >
+      <GridItem alignSelf="center" rowSpan={2}>
+        <Counter count={count} setCount={setCount} />
+      </GridItem>
+      <GridItem rowSpan={2}>
+        <EditorForm />
+      </GridItem>
+      <GridItem alignSelf="end" colSpan={2}>
         <UserForm />
       </GridItem>
       <AnimatedBox
         position="absolute"
         bottom={0}
-        width={'full'}
+        width={'96%'}
         bgColor={'#e2e8f0'}
         zIndex={-5}
         style={{ ...styles }}
