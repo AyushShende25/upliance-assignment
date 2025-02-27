@@ -1,6 +1,6 @@
 import { RICH_TEXT_OPTIONS, RichTextAction } from '@/constants';
 import { ButtonGroup, Flex, IconButton } from '@chakra-ui/react';
-import Divider from './Divider';
+import Divider from './divider';
 import { useLexicalComposerContext } from '@lexical/react/LexicalComposerContext';
 import { FORMAT_ELEMENT_COMMAND, FORMAT_TEXT_COMMAND } from 'lexical';
 function ToolbarPlugin() {
